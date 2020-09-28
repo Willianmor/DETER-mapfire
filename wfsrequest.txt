@@ -1,0 +1,1 @@
+http://terrabrasilis.dpi.inpe.br/geoserver/deter-amz/deter_amz/wfs?TYPENAME=deter-amz:deter_amz&srsName=EPSG:4674&exceptions=text/xml&VERSION=2.0.0&REQUEST=GetFeature&SERVICE=WFS&CQL_FILTER=date%20BETWEEN%20'2020-06-30'%20AND%20'2020-09-28'&OUTPUTFORMAT=SHAPE-ZIP&&count=200000&sortBy=gid&startIndex=0
