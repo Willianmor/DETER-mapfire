@@ -42,6 +42,10 @@ def filter_data(data,datanome):
         print("Vai criar o arquivo")
         #Criando a layers e construindo do shapefile
         out_lyr=ds.CreateLayer(datanome,shape.GetSpatialRef(),ogr.wkbPolygon)
+        #Dandando permissão aos arquivos geradods
+        permissao = 755
+        os.chmod(out_lyr,permissao)
+        #Construindo as colunas
         out_lyr.CreateFields(shape.schema)
 
         out_defn=shape.GetLayerDefn()
